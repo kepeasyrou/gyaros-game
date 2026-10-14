@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ναυαγοί στη Γυάρο</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#17313b;background:#f4f1e9}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px}.panel{width:min(100%,620px);background:#fff;border-radius:24px;padding:clamp(24px,5vw,48px);box-shadow:0 12px 35px #17313b15;text-align:center}h1{font-size:clamp(30px,6vw,46px);margin:0 0 12px}p{line-height:1.55;color:#4c6067}.teams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:30px}button{font:inherit;border:0;border-radius:14px;padding:24px 8px;color:#fff;font-weight:750;cursor:pointer;min-height:88px}button:focus-visible{outline:4px solid #111;outline-offset:3px}.red{background:#b83f3b}.blue{background:#17618b}.green{background:#34744e}.yellow{background:#b58416}.note{font-size:13px;margin-top:24px}@media(max-width:380px){.teams{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main class="panel"><h1>Ναυαγοί στη Γυάρο</h1><p>Τέσσερις ομάδες. Ένα άγνωστο νησί. Μια περιπέτεια εξερεύνησης.</p><p><strong>Διαλέξτε την ομάδα σας για να ξεκινήσετε.</strong></p><div class="teams"><button class="red" data-team="Κόκκινη">ΚΟΚΚΙΝΗ</button><button class="blue" data-team="Μπλε">ΜΠΛΕ</button><button class="green" data-team="Πράσινη">ΠΡΑΣΙΝΗ</button><button class="yellow" data-team="Κίτρινη">ΚΙΤΡΙΝΗ</button></div><p id="message" role="status" aria-live="polite" class="note">Δοκιμαστική αρχική οθόνη — οι αποστολές θα προστεθούν στη συνέχεια.</p></main><script>document.querySelectorAll('[data-team]').forEach(button=>button.addEventListener('click',()=>{document.getElementById('message').textContent='Επιλέξατε την '+button.dataset.team+' ομάδα. Η πρώτη αποστολή θα προστεθεί σύντομα.';}));</script></body>
+</html>
